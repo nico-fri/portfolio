@@ -21,7 +21,7 @@ const data = [
       'Die Web App wurde mit React erstellt und enthält eine Authentifizierung über Firebase',
     image: Portfolio2,
     color: '#4665ED',
-    link: 'https://webapp-1.netlify.app/login',
+    link: 'https://webapp-1.netlify.app',
     github: 'https://github.com/nico-fri/webApp_1',
     react: true,
     dashboard: true,
