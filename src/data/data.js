@@ -33,7 +33,7 @@ const data = [
       'Basierend auf Angular und Angular Material ist dieses Dashboard entstanden',
     image: Portfolio3,
     color: '#CA0813',
-    link: 'https://smartbp.netlify.app',
+    link: 'https://smartbp-dcd6e.web.app',
     github: 'https://github.com/nico-fri/webApp_2',
     angular: true,
     dashboard: true,
