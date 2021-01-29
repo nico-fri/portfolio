@@ -1,6 +1,6 @@
-import Portfolio1 from '../assets/portfolio_1.png'
-import Portfolio2 from '../assets/portfolio_2.png'
-import Portfolio3 from '../assets/portfolio_3.png'
+import Portfolio1 from '../assets/portfolio_1.webp'
+import Portfolio2 from '../assets/portfolio_2.webp'
+import Portfolio3 from '../assets/portfolio_3.webp'
 
 const data = [
   {
