@@ -10,24 +10,13 @@ import { IconContext } from 'react-icons'
 function Portfolio() {
   const [current, setCurrent] = useState(0)
   const length = data.length
-  const timeout = useRef(null)
 
   const nextProject = () => {
-    if (timeout.current) {
-      clearTimeout(timeout.current)
-    }
     setCurrent(current === length - 1 ? 0 : current + 1)
   }
 
   const prevProject = () => {
-    if (timeout.current) {
-      clearTimeout(timeout.current)
-    }
     setCurrent(current === 0 ? length - 1 : current - 1)
-  }
-
-  if (!Array.isArray(data) || data.length <= 0) {
-    return null
   }
 
   return (
