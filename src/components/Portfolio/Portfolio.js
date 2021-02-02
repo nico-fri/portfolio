@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import './Portfolio.css'
 import data from '../../data/data'
 import Information from '../Information/Information'
