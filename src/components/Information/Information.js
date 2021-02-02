@@ -30,17 +30,11 @@ function Information({ prevProject, nextProject, github, link }) {
       </div>
       <div className='information__right'>
         <IconContext.Provider value={{ className: 'information__btnIcon' }}>
-          <button
-            onClick={prevProject}
-            className='information__btn box--shadow'
-          >
+          <button onClick={prevProject} className='information__btn'>
             <BsArrowLeft />
             Prev
           </button>
-          <button
-            onClick={nextProject}
-            className='information__btn box--shadow'
-          >
+          <button onClick={nextProject} className='information__btn'>
             Next
             <BsArrowRight />
           </button>

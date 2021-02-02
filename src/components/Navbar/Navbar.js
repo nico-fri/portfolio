@@ -4,12 +4,12 @@ import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 import { VscClose } from 'react-icons/vsc'
 import { IconContext } from 'react-icons'
 import { BiCodeAlt } from 'react-icons/bi'
-import data from '../../data/data'
+import Sidebar from '../Sidebar/Sidebar'
 
 function Navbar() {
   const [click, setClick] = useState(false)
 
-  const handleClick = () => setClick(!click)
+  const handleClick = () => setClick((prevState) => !prevState)
   const closeMobileMenu = () => setClick(false)
 
   return (
@@ -24,21 +24,7 @@ function Navbar() {
           </IconContext.Provider>
         </div>
       </div>
-      <ul className={click ? 'navbar__menu navbar--active' : 'navbar__menu'}>
-        {data.map((item, id) => (
-          <li key={id} className='navbar__links'>
-            <a
-              href={item.link}
-              target='_blank'
-              rel='noreferrer'
-              className='navbar__link'
-              onClick={closeMobileMenu}
-            >
-              {item.title}
-            </a>
-          </li>
-        ))}
-      </ul>
+      <Sidebar closeMobileMenu={closeMobileMenu} click={click} />
     </>
   )
 }
